@@ -839,59 +839,180 @@ section {
 /* ============================================
    13. RESPONSIVE
    ============================================ */
+
+/* Tablet and smaller laptops */
+@media (max-width: 992px) {
+    .container {
+        padding: 0 1.5rem;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2.5rem;
+    }
+
+    .hero-title {
+        font-size: 2.8rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .premium-title {
+        font-size: 2rem;
+    }
+
+    .stacked-phones {
+        height: 400px;
+        max-width: 350px;
+    }
+}
+
+/* Tablets */
 @media (max-width: 768px) {
+    html {
+        font-size: 15px;
+    }
+
     .navbar {
         padding: 0 1rem;
         height: 60px;
+        width: calc(100% - 24px);
+        top: 12px;
     }
 
     .nav-links {
         display: none;
     }
 
+    .nav-btn {
+        padding: 8px 18px;
+        font-size: 0.85rem;
+    }
+
+    .logo-text {
+        font-size: 0.95rem;
+    }
+
+    .logo-image {
+        height: 36px;
+    }
+
+    .hero {
+        padding-top: 120px;
+        padding-bottom: 60px;
+        min-height: auto;
+    }
+
     .hero-content {
         grid-template-columns: 1fr;
         text-align: center;
-        gap: 3rem;
+        gap: 2rem;
     }
 
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+        line-height: 1.3;
     }
 
     .hero-description {
+        font-size: 1rem;
         margin: 0 auto 2rem;
+        padding: 0 0.5rem;
     }
 
     .hero-buttons {
+        flex-direction: column;
+        gap: 0.8rem;
+        align-items: center;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+        max-width: 280px;
         justify-content: center;
+        padding: 14px 24px;
     }
 
     .hero-stats {
+        flex-wrap: wrap;
         justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .stat-number {
+        font-size: 1.5rem;
+    }
+
+    .stat-label {
+        font-size: 0.8rem;
     }
 
     .image-card {
         transform: none;
-        margin: 0 1rem;
+        margin: 0 auto;
+        border-radius: 30px;
+        border-width: 8px;
     }
 
     .stacked-phones {
-        height: 350px;
-        max-width: 300px;
+        height: 320px;
+        max-width: 280px;
     }
 
     .stacked-phones .image-card {
-        width: 160px;
+        width: 150px;
     }
 
-    .privacy-toggle-btn {
-        font-size: 1rem;
-        padding: 1rem 1.5rem;
+    section {
+        padding: 60px 0;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .feature-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .feature-icon {
+        font-size: 2rem;
+    }
+
+    .feature-title {
+        font-size: 1.2rem;
+    }
+
+    .steps-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .step-card {
+        padding: 2rem 1.5rem;
     }
 
     .premium-card {
-        padding: 2rem;
+        padding: 2rem 1.5rem;
+        border-radius: var(--radius-md);
+    }
+
+    .premium-title {
+        font-size: 1.8rem;
+    }
+
+    .premium-description {
+        font-size: 1rem;
     }
 
     .premium-features {
@@ -900,5 +1021,323 @@ section {
 
     .premium-feature {
         justify-content: center;
+        font-size: 1rem;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .faq-question {
+        font-size: 1rem;
+        padding: 1.2rem;
+    }
+
+    .faq-answer p {
+        padding: 0 1.2rem 1.2rem;
+    }
+
+    .privacy-toggle-btn {
+        font-size: 1rem;
+        padding: 1rem 1.2rem;
+    }
+
+    .privacy-content {
+        padding: 2rem 1.5rem;
+    }
+
+    .privacy-title {
+        font-size: 1.8rem;
+    }
+
+    .privacy-heading {
+        font-size: 1.2rem;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .footer-links {
+        align-items: center;
+    }
+
+    .footer-social {
+        align-items: center;
+    }
+
+    .social-link {
+        justify-content: center;
+    }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+
+    .container {
+        padding: 0 1rem;
+    }
+
+    .navbar {
+        width: calc(100% - 16px);
+        top: 8px;
+        height: 56px;
+        padding: 0 0.8rem;
+    }
+
+    .logo-text {
+        font-size: 0.85rem;
+        letter-spacing: 0.5px;
+    }
+
+    .logo-image {
+        height: 32px;
+    }
+
+    .beta-badge {
+        font-size: 0.55rem;
+        padding: 2px 6px;
+    }
+
+    .nav-btn {
+        padding: 8px 14px;
+        font-size: 0.8rem;
+    }
+
+    .hero {
+        padding-top: 100px;
+        padding-bottom: 40px;
+    }
+
+    .hero-title {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero-description {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        padding: 12px 20px;
+        font-size: 0.95rem;
+    }
+
+    .hero-stats {
+        gap: 1rem;
+        padding-top: 1.5rem;
+    }
+
+    .stat-item {
+        min-width: 80px;
+    }
+
+    .stat-number {
+        font-size: 1.3rem;
+    }
+
+    .stacked-phones {
+        height: 280px;
+        max-width: 240px;
+    }
+
+    .stacked-phones .image-card {
+        width: 130px;
+        border-width: 6px;
+        border-radius: 24px;
+    }
+
+    section {
+        padding: 50px 0;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .feature-card {
+        padding: 1.5rem 1.2rem;
+    }
+
+    .feature-icon {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .feature-title {
+        font-size: 1.1rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .feature-description {
+        font-size: 0.9rem;
+    }
+
+    .step-card {
+        padding: 1.5rem 1.2rem;
+    }
+
+    .step-number {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+
+    .step-icon {
+        font-size: 1.6rem;
+    }
+
+    .step-title {
+        font-size: 1.1rem;
+    }
+
+    .step-description {
+        font-size: 0.9rem;
+    }
+
+    .premium-card {
+        padding: 1.5rem 1rem;
+    }
+
+    .premium-badge {
+        font-size: 0.8rem;
+        padding: 5px 12px;
+    }
+
+    .premium-title {
+        font-size: 1.5rem;
+    }
+
+    .premium-description {
+        font-size: 0.9rem;
+        margin-bottom: 2rem;
+    }
+
+    .premium-feature {
+        font-size: 0.95rem;
+        gap: 0.8rem;
+    }
+
+    .check-icon {
+        width: 24px;
+        height: 24px;
+        font-size: 0.8rem;
+    }
+
+    .testimonial-card {
+        padding: 1.5rem;
+    }
+
+    .testimonial-name {
+        font-size: 1rem;
+    }
+
+    .testimonial-text {
+        font-size: 0.9rem;
+    }
+
+    .faq-question {
+        font-size: 0.95rem;
+        padding: 1rem;
+    }
+
+    .faq-answer p {
+        font-size: 0.9rem;
+        padding: 0 1rem 1rem;
+    }
+
+    .privacy-toggle-btn {
+        font-size: 0.9rem;
+        padding: 1rem;
+    }
+
+    .privacy-section {
+        padding-top: 100px;
+    }
+
+    .privacy-content {
+        padding: 1.5rem 1rem;
+        border-radius: var(--radius-md);
+    }
+
+    .privacy-title {
+        font-size: 1.5rem;
+    }
+
+    .privacy-heading {
+        font-size: 1.1rem;
+        margin: 1.5rem 0 0.8rem;
+    }
+
+    .privacy-section-content p {
+        font-size: 0.9rem;
+    }
+
+    .privacy-list {
+        font-size: 0.9rem;
+        padding-right: 0.5rem;
+    }
+
+    .footer {
+        padding: 3rem 0 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .footer-logo {
+        font-size: 1.3rem;
+    }
+
+    .footer-description {
+        font-size: 0.85rem;
+    }
+
+    .footer-title {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .footer-link {
+        font-size: 0.85rem;
+    }
+
+    .footer-bottom {
+        font-size: 0.8rem;
+        padding-top: 1.5rem;
+    }
+}
+
+/* Extra small phones */
+@media (max-width: 360px) {
+    .hero-title {
+        font-size: 1.6rem;
+    }
+
+    .hero-description {
+        font-size: 0.9rem;
+    }
+
+    .stacked-phones {
+        height: 240px;
+        max-width: 200px;
+    }
+
+    .stacked-phones .image-card {
+        width: 110px;
+    }
+
+    .section-title {
+        font-size: 1.3rem;
+    }
+
+    .premium-title {
+        font-size: 1.3rem;
     }
 }
