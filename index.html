@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="English Streak - بوت تيليجرام لتطوير مفرداتك الإنجليزية يوميًا">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <title>English Streak - كلمة إنجليزية كل يوم</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Background -->
+    <div class="grid-background"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <img src="logo.svg" alt="English Streak Logo"
+                    class="logo-image">
+                <span class="logo-text">ENGLISH STREAK</span>
+                <span class="beta-badge">BETA</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link">الرئيسية</a>
+                <a href="#features" class="nav-link">المميزات</a>
+                <a href="#how-it-works" class="nav-link">كيف يعمل</a>
+                <a href="#testimonials" class="nav-link">آراء المستخدمين</a>
+            </div>
+            <a href="https://t.me/english365streak_bot/english365streak" class="nav-btn" target="_blank" rel="noopener noreferrer">ابدأ
+                الآن</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-left" data-aos="fade-left">
+                    <h1 class="hero-title">
+                        حسّن قدراتك اللغوية عبر بناء مخزون مفردات أعمق وأكثر تنوّعًا
+                    </h1>
+                    <p class="hero-description">
+                        بوت تيليجرام ذكي يساعدك على بناء حصيلة لغوية قوية من خلال الاستمرارية.
+                        نقدم لك من 1 إلى 3 كلمات يوميًا مجانًا بأسلوب متكامل يضمن ثبات المعلومة.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="https://t.me/english365streak_bot/english365streak" class="btn-primary btn-large"
+                            target="_blank" rel="noopener noreferrer">
+                            <span class="btn-icon"><i class="fas fa-rocket"></i></span>
+                            ابدأ مع البوت
+                        </a>
+                        <a href="#how-it-works" class="btn-secondary btn-large">
+                            <span class="btn-icon"><i class="fas fa-info-circle"></i></span>
+                            كيف يعمل؟
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">طوال الاسبوع</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">+ 20</span>
+                            <span class="stat-label">مجال متخصص</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">AI</span>
+                            <span class="stat-label">مدعوم بالذكاء الاصطناعي</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-right" data-aos="fade-right">
+                    <div class="hero-cards stacked-phones">
+                        <div class="image-card phone-back">
+                            <img src="https://i.postimg.cc/vB8WgmKt/5936069940869794610.jpg"
+                                alt="English Streak Dashboard" style="width: 100%; height: auto; display: block;">
+                        </div>
+                        <div class="image-card phone-front">
+                            <img src="https://i.postimg.cc/fTk82kmz/photo-2025-11-30-13-08-42.jpg"
+                                alt="English Streak App Interface" style="width: 100%; height: auto; display: block;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">لماذا English Streak؟</h2>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon"><i class="fas fa-layer-group"></i></div>
+                    <h3 class="feature-title">مناسب لجميع المستويات</h3>
+                    <p class="feature-description">سواء كنت مبتدئًا، متوسطًا، أو متقدمًا، البوت يتكيف مع مستواك ويساعدك
+                        على تطوير مخزون مفرداتك بشكل تدريجي.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon"><i class="fas fa-brain"></i></div>
+                    <h3 class="feature-title">محتوى ذكي</h3>
+                    <p class="feature-description">نقدم كلمات مرتبطة بسياقات واقعية مع أمثلة عملية تساعدك على الفهم
+                        والحفظ بشكل أفضل.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon"><i class="fas fa-chart-pie"></i></div>
+                    <h3 class="feature-title">تتبع دقيق للتقدم</h3>
+                    <p class="feature-description">داش بورد لمراقبة رحلتك التعليمية وقياس تطورك
+                        بمرور الوقت.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon"><i class="fas fa-infinity"></i></div>
+                    <h3 class="feature-title">التزام واستمرارية</h3>
+                    <p class="feature-description">نظام السلسلة اليومية يحفزك على الممارسة المنتظمة، مما يعزز تثبيت
+                        المعلومات على المدى الطويل.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advanced Features Section -->
+    <section id="advanced" class="premium">
+        <div class="container">
+            <div class="premium-card" data-aos="zoom-in">
+                <span class="premium-badge">مميزات إضافية</span>
+                <h2 class="premium-title">اكتشف المزيد من الإمكانيات</h2>
+                <p class="premium-description">
+                    احصل على تجربة تعليمية أكثر تخصيصًا واحترافية مع مجموعة من الخصائص المتقدمة التي تساعدك على إتقان
+                    اللغة بشكل أسرع وأكثر فعالية.
+                </p>
+                <div class="premium-features">
+                    <div class="premium-feature">
+                        <span class="check-icon"><i class="fas fa-check-circle"></i></span>
+                        <span>تخصيص المفردات حسب اهتمامك</span>
+                    </div>
+                    <div class="premium-feature">
+                        <span class="check-icon"><i class="fas fa-check-circle"></i></span>
+                        <span>استلام حتى 8 كلمات يوميًا لتسريع وتيرة التعلم</span>
+                    </div>
+                    <div class="premium-feature">
+                        <span class="check-icon"><i class="fas fa-check-circle"></i></span>
+                        <span>تقليص تكرار الكلمات إلى الصفر لضمان تنوع المحتوى</span>
+                    </div>
+                    <div class="premium-feature">
+                        <span class="check-icon"><i class="fas fa-check-circle"></i></span>
+                        <span>وصول مبكر للمميزات الجديدة والتحديثات الحصرية</span>
+                    </div>
+                </div>
+                <a href="https://t.me/english365streak_bot/english365streak" class="btn-primary btn-large"
+                    target="_blank" rel="noopener noreferrer">
+                    <span class="btn-icon"><i class="fas fa-star"></i></span>
+                    استكشف في البوت
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">كيف تبدأ؟</h2>
+            <div class="steps-grid">
+                <div class="step-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="step-number">1</div>
+                    <div class="step-icon"><i class="fab fa-telegram-plane"></i></div>
+                    <h3 class="step-title">افتح البوت</h3>
+                    <p class="step-description">اضغط على زر "ابدأ الآن" لفتح البوت على تيليجرام
+                        مباشرة.</p>
+                </div>
+                <div class="step-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-number">2</div>
+                    <div class="step-icon"><i class="fas fa-list-ul"></i></div>
+                    <h3 class="step-title">اختر اهتماماتك</h3>
+                    <p class="step-description">حدد المجالات التي تناسب احتياجاتك ومستواك اللغوي.
+                    </p>
+                </div>
+                <div class="step-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="step-number">3</div>
+                    <div class="step-icon"><i class="fas fa-bell"></i></div>
+                    <h3 class="step-title">استلم كلماتك</h3>
+                    <p class="step-description">ستصلك الكلمات الجديدة يوميًا .</p>
+                </div>
+                <div class="step-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="step-number">4</div>
+                    <div class="step-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3 class="step-title">تعلم وتطور</h3>
+                    <p class="step-description">حافظ على سلسلتك اليومية وشاهد تحسن مستواك بمرور
+                        الوقت.</p>
+                </div>
+            </div>
+            <div class="steps-cta" data-aos="fade-up">
+                <a href="https://t.me/english365streak_bot/english365streak" class="btn-primary btn-large"
+                    target="_blank" rel="noopener noreferrer">
+                    <span class="btn-icon"><i class="fas fa-bolt"></i></span>
+                    ابدأ رحلتك الآن
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">آراء المستخدمين</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-header">
+                        <div class="testimonial-info">
+                            <div class="testimonial-name">أحمد محمد</div>
+                            <div class="testimonial-role">طالب جامعي</div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"تجربة رائعة! ساعدني البوت في تحسين مفرداتي بشكل
+                        ملحوظ دون أن أشعر بعبء
+                        الدراسة التقليدية. أنتظر الكلمة الجديدة كل يوم بشغف."</p>
+                </div>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-header">
+                        <div class="testimonial-info">
+                            <div class="testimonial-name">سارة علي</div>
+                            <div class="testimonial-role">موظفة</div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"البوت سهل الاستخدام والكلمات مفيدة جدًا في العمل.
+                        التصنيفات المتنوعة
+                        جعلت التعلم أكثر فعالية وملاءمة لاحتياجاتي."</p>
+                </div>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-header">
+                        <div class="testimonial-info">
+                            <div class="testimonial-name">خالد عمر</div>
+                            <div class="testimonial-role">مهتم بالسفر</div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"تعلمت كلمات كثيرة ساعدتني في رحلاتي للخارج. و
+                        الأسلوب المدروس
+                        جعلا التعلم سهلاً وممتعًا."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">الأسئلة الشائعة</h2>
+            <div class="faq-list" data-aos="fade-up">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>ما هو English Streak وكيف يعمل؟</span>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>English Streak هو بوت تيليجرام تعليمي يساعدك على تعلم الإنجليزية من خلال
+                            إرسال كلمات يومية
+                            مصممة خصيصًا لتناسب مستواك واهتماماتك. كل كلمة تأتي مع معناها، النطق
+                            الصحيح، وأمثلة واقعية
+                            لتسهيل الحفظ والفهم.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>هل الخدمة مجانية تمامًا؟</span>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>نعم! نقدم خدمة مجانية يوميًا تتضمن من 1 إلى 3 كلمات. كما نوفر مميزات
+                            إضافية اختيارية
+                            للمستخدمين الذين يرغبون في تسريع وتيرة التعلم وتخصيص التجربة بشكل أكبر.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>كيف أبدأ مع البوت؟</span>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>ببساطة اضغط على زر "ابدأ الآن" في الأعلى، أو افتح البوت مباشرة على
+                            تيليجرام، اضغط "ابدأ"، ثم
+                            اختر المجال والمستوى اللغوي الذي يناسبك. بعدها ستبدأ باستلام كلماتك
+                            اليومية تلقائيًا.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>ما هو نظام السلسلة اليومية (Streak)؟</span>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>السلسلة اليومية هي عدد الأيام المتتالية التي تتفاعل فيها مع الكلمات. نظام
+                            التحفيز هذا يشجعك
+                            على الاستمرارية، حيث كلما زادت سلسلتك، زاد تقدمك وتحسن مستواك في اللغة.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>هل يمكنني اختيار مجال معين للمفردات؟</span>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>نعم، يمكنك الاختيار من بين عدة مجالات مثل: المفاهيم العامة، المصطلحات
+                            التقنية، لغة الأعمال،
+                            التخصصات الجامعية، وغيرها. يمكنك تغيير اهتماماتك في أي وقت من إعدادات
+                            البوت.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>كم عدد الكلمات التي سأستلمها يوميًا؟</span>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>في الخطة المجانية، ستستلم من 1 إلى 3 كلمات يوميًا. إذا كنت ترغب في
+                            المزيد، يمكنك الاشتراك في
+                            الخطة المتقدمة لاستلام حتى 8 كلمات يوميًا.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>كيف أتواصل مع الدعم الفني؟</span>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>يمكنك التواصل معنا مباشرة عبر تيليجرام من خلال المعرف: <a
+                                href="https://t.me/ES365_Support"
+                                target="_blank" rel="noopener noreferrer">@ES365_Support</a>
+                            وسنكون سعداء بمساعدتك.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy Policy Section (Collapsible) -->
+    <section id="privacy" class="privacy-section">
+        <div class="container">
+            <div class="privacy-toggle" data-aos="fade-up">
+                <button class="privacy-toggle-btn" onclick="togglePrivacy()">
+                    <span><i class="fas fa-shield-alt"></i> سياسة الخصوصية وشروط الاستخدام</span>
+                    <span class="privacy-toggle-icon"><i class="fas fa-chevron-down"></i></span>
+                </button>
+            </div>
+            <div class="privacy-content privacy-hidden" id="privacy-content" data-aos="fade-up">
+                <h2 class="privacy-title">الشروط والخصوصية</h2>
+                <p class="privacy-updated">آخر تحديث: 28 ديسمبر 2025</p>
+
+                <div class="privacy-section-content">
+                    <p>نرحب بك في <strong>English Streak</strong>. باستخدامك للخدمة، فإنك توافق على شروطنا العامة.</p>
+
+                    <h3 class="privacy-heading">خصوصيتك</h3>
+                    <p>نحترم خصوصيتك ونجمع فقط المعلومات الضرورية لتقديم الخدمة وتحسين تجربتك. لا نشارك بياناتك مع أطراف خارجية لأغراض تسويقية.</p>
+
+                    <h3 class="privacy-heading">استخدام الخدمة</h3>
+                    <p>الخدمة مُقدَّمة لأغراض تعليمية. نسعى لتقديم أفضل تجربة ممكنة، ونحتفظ بحق تحديث المحتوى والشروط حسب الحاجة.</p>
+
+                    <h3 class="privacy-heading">الاشتراكات</h3>
+                    <p>للاطلاع على تفاصيل الاشتراكات والمدفوعات، يرجى مراجعة صفحة الاشتراك داخل التطبيق أو التواصل معنا.</p>
+
+                    <div class="privacy-footer">
+                        <p>للتواصل والاستفسارات: <a href="https://t.me/ES365_Support" target="_blank" rel="noopener noreferrer">@ES365_Support</a></p>
+                        <p class="privacy-acceptance">باستخدامك للخدمة، فإنك توافق على شروطنا وسياسة الخصوصية.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">ENGLISH STREAK</div>
+                    <p class="footer-description">رفيقك اليومي لإتقان اللغة الإنجليزية، كلمة بكلمة.
+                    </p>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">روابط سريعة</h4>
+                    <div class="footer-links">
+                        <a href="#home" class="footer-link">الرئيسية</a>
+                        <a href="#features" class="footer-link">المميزات</a>
+                        <a href="#how-it-works" class="footer-link">كيف يعمل</a>
+                        <a href="#privacy" class="footer-link">سياسة الخصوصية</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">تواصل معنا</h4>
+                    <div class="footer-social">
+                        <a href="https://t.me/english365streak_bot/english365streak" class="social-link"
+                            target="_blank">
+                            <i class="fab fa-telegram"></i>
+                            <span>بوت تيليجرام</span>
+                        </a>
+                        <a href="https://t.me/english365streak_channel" class="social-link" target="_blank">
+                            <i class="fas fa-bullhorn"></i>
+                            <span>قناة التحديثات</span>
+                        </a>
+                        <a href="https://t.me/ES365_Support" class="social-link" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-envelope"></i>
+                            <span>الدعم الفني</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 English Streak. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                const isActive = item.classList.contains('active');
+
+                // Close all other items
+                document.querySelectorAll('.faq-item').forEach(otherItem => {
+                    otherItem.classList.remove('active');
+                });
+
+                // Toggle current item
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+
+        // Privacy Section Toggle
+        function togglePrivacy() {
+            const content = document.getElementById('privacy-content');
+            const btn = document.querySelector('.privacy-toggle-btn');
+            
+            if (content.classList.contains('privacy-hidden')) {
+                content.classList.remove('privacy-hidden');
+                content.classList.add('privacy-visible');
+                btn.classList.add('active');
+            } else {
+                content.classList.remove('privacy-visible');
+                content.classList.add('privacy-hidden');
+                btn.classList.remove('active');
+            }
+        }
+    </script>
+</body>
+
+</html>
